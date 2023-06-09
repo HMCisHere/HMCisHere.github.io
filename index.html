@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMCisHere</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/0aca80d020.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p style="font-size: 60px;">HM<span style="color: #ff004f; font-size: 60px;" >C</span>.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Website Developer</p>
+                <h1>Hi, I'm <span>Arshia</span><br>From Iran Call Me HMC </h1>
+            </div>
+        </div>
+    </div>
+<!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="name">Hello to all of you, my name is <span class="name-span">Arshia Sadr</span>
+                        , you can also call me HMCisHere. I work in
+                        the field of website design, programming,
+                        computer science, and many others.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/Program interfaces</li>
+                                <li><span>Web Development</span><br>Website's Development</li>
+                                <li><span>Bot Development</span><br>Discord and Telegram Bot Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Dorfie Development</span><br>I'm Head Developer Of The Dorfie Team</li>
+                                <li><span>Asre Bartar</span><br>Head Developer Of The Asre Bartar Team</li>
+                                <li><span>HMC Bot</span><br>Owner And Developer Of The HMC Discord Bot</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>CS50 Harvard</span><br>Website Designer - Computer Science</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Every Website's Like Shop, GYM And What You Want</p>
+                    <a href="#" class="btn3">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Every UI And UX Design's</p>
+                    <a href="#" class="btn3">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Bot Development</h2>
+                    <p>Every Bot's Like Music, Moderation And What You Want</p>
+                    <a href="#" class="btn3">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/work1.png" alt="Work">
+                    <div class="layer">
+                        <h3>Asre Bartar Development</h3>
+                        <p>I'm Make There Discord Server And There Bot</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work2.png" alt="Work">
+                    <div class="layer">
+                        
+                        <h3><i class="fa-solid fa-star"></i> Dorfie Development Web and Discord</h3>
+                        <p>The New But Best Development Team I Made There Discord Server And Web</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/work3.png" alt="Work">
+                    <div class="layer">
+                        <h3>HMC Discord Bot</h3>
+                        <p>Now I'm Working On HMC Bot</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> 8arshia5@gmail.com</p>
+                <p><i class="fa-brands fa-discord"></i> Discord ID HMC#0771</p>
+                <div class="social-icons">
+                    <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/Dorfieir"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/HMCisHere"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.coffeebede.com/hmcishere"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                </div>
+                <a href="#" download class="btn btn2">Dowload CV</a>
+            </div>
+            <div class="contact-left">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-heart-circle-exclamation"></i> Copyright HMCisHere. Made By HMC#0771</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwdj9uEEyxXhQgfLN718k_r7U17ElSinaCyxfifD8irUgQC9m9mevljZTWtf1ZtlOaeA/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
