@@ -3,9 +3,9 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Website", "Program", "UI/UX"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: ["Arshia", "Sadr", "HMC"],
+        typeSpeed: 115,
+        backSpeed: 75,
         loop: true
     });
 
