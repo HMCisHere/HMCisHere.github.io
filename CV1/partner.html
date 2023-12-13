@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Works</title>
+    <script src="https://kit.fontawesome.com/0aca80d020.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="mainstyle.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="shortcut icon" type="x-icon" href="img/iocn.png">
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p style="font-size: 60px;">HM<span style="color: blueviolet; font-size: 60px;" >C</span>.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Let's Make <span class="typing" style="color: #fff;"></span> For Your Bussiness</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Partner's</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Partners/HMCnetwork.jpn" alt="HMCNetwork">
+                    <div class="layer">
+                        
+                        <h3><i class="fa-solid fa-thumbtack"></i> HMC Network</h3>
+                        <p>My Discord Server</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Partners/dorfie.tech.jpn" alt="DorfieTech">
+                    <div class="layer">
+                        
+                        <h3><i class="fa-solid fa-thumbtack"></i> Dorfie.Tech</h3>
+                        <p>My Team For Develop/Hacking And Design</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Partners/atlantic.jpn" alt="Atlantic">
+                    <div class="layer">
+                        
+                        <h3>Atlantic</h3>
+                        <p>I'm The Head Developer In There Team</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Partners/asrebartar.jpn" alt="AsreBartar">
+                    <div class="layer">
+                        <h3>AsreBartar</h3>
+                        <p>I'm The Head Developer In There Team</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Partners/nova.jpn" alt="Nova">
+                    <div class="layer">
+                        
+                        <h3>NovaMTA</h3>
+                        <p>Best Iran MTA Game Server / I config There Discord And Website</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Partners/axfamily.jpn" alt="AXfamily">
+                    <div class="layer">
+                        <h3>AXFamily</h3>
+                        <p>Developer Of There Family Discord Server</p>
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#contact" class="btn">Do You Want To Be Next ?</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> 8arshia5@gmail.com</p>
+                    <p><i class="fa-brands fa-discord"></i> Discord ID HMC#0771</p>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/Dorfieir"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://github.com/HMCisHere"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.coffeebede.com/hmcishere"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
+                    </div>
+                    <a href="https://discord.gg/PcH4p5K7zG" class="btn btn2">join us</a>
+                </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-heart-circle-exclamation"></i> Copyright ArshiaSadr. Made By HMC#0771 In 2022</p>
+        </div>
+    </div>
+
+    <script src="partnerscript.js"></script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+    
+    <script>
+    
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    
+    </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwdj9uEEyxXhQgfLN718k_r7U17ElSinaCyxfifD8irUgQC9m9mevljZTWtf1ZtlOaeA/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
