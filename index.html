@@ -1,294 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <script src="https://kit.fontawesome.com/0aca80d020.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <link rel="stylesheet" href="mainstyle.css">
-    <link rel="shortcut icon" type="x-icon" href="img/iocn.png">
-    <script src="script.js"></script>
-</head>
-<body>
-    
-    <section>
-        <div id="header">
+	<head>
+		<meta charset="utf-8">
+		<title>ArshiaHMC | Home</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="https://kit.fontawesome.com/0aca80d020.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="/images/developer.ico">
+	</head>
+	<body id="top">
+
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+
+        <!-- start header -->
+        <header id="head">
             <div class="container">
-                <nav>
-                    <p style="font-size: 60px;">H<span style="color: blueviolet;">M</span>C.</p>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Shop</a></li>
-                        <li><a href="#portfolio">Partner's</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                <p>Full Stack <span class="color">Developer's</span> Team</p>
-                <h1>Best <span class="color">Tech</span> Team In <span class="color">Asia</span><br><span>Let's Make Your Website </span><span style="color: #fff;" class="typing"></span></h1>
-            </div>
-        </div>
-    </div>
-    </section>
-
-<section>
-
-    <!--About-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="img/user.png" alt="user">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-phone"></i><span> Phone</span>+98 902 793 8889</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:8arshia5@gmail.com">8arshia5@gmail.com</a></p>
+                    </div>
+                    <div class="col-md-5 col-sm-4 col-xs-12">
+                        <ul class="social-icon">
+                            <li><span>Meet us on</span></li>
+                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://discord.gg/fq2PJG8BeP"><i class="fa-brands fa-discord"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="name">Hello to all of you, my name is <span class="name-span">Arshia Sadr</span>
-                        , you can also call me HMC. I work in
-                        the field of website design, programming,
-                        computer science, and many others.</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+        </header>
+        <!-- end header -->
+
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="#head" class="navbar-brand">HMC Network</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#top">HOME</a></li>
+						<li><a href="#about">ABOUT</a></li>
+						<li><a href="#team">TEAM</a></li>
+						<li><a href="#service">SERVICE</a></li>
+					  <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">We make website's in <span>HMC Team</span></h1>
+    					<div class="element">
+                            <div class="sub-element">Hello, This is a ArshiaHMC's Website.</div>
+                            <div class="sub-element">Our Team Can Make Website for You.</div>
+                            <div class="sub-element">So If You Want Let's Make You Website!</div>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/Program interfaces</li>
-                                <li><span>Web Development</span><br>Website's Development</li>
-                                <li><span>Bot Development</span><br>Discord and Telegram Bot Development</li>
-                                <li><span>VPN And VPS Config's</span><br>I Can Config V2Ray for You Or VPS for Your Web, Game And More...</li>
-                                <li><span>Photoshop And Video Edit's</span><br>I Can Make Logo, Banner, Icon, And Any Video Edit's</li>
-                                <li><span>Discord Server Config</span><br>I Can Config Your Discord Server And Role's, Anti Raid, And More...</li>
-                            </ul>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end home -->
+
+    	<!-- start about -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">WE ARE <span>HMC Team</span></h2>
+    				</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-mobile"></i>
+								</div>
+								<h3 class="media-heading">FULLY RESPONSIVE</h3>
+							</div>
+							<div class="media-body">
+								<p>
+									Creating a responsive website involves designing and developing it to provide an optimal viewing and interaction experience across a variety of devices and screen sizes. This is achieved through techniques such as fluid grid layouts, flexible images, and media queries in CSS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-comment-o"></i>
+								</div>
+								<h3 class="media-heading">FREE SUPPORT</h3>
+							</div>
+							<div class="media-body">
+								<p>"Free support" refers to assistance or help that is provided without any charge. In the context of a product or service, offering free support means that users can receive assistance, guidance, or troubleshooting without incurring additional costs.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-heading-wrapper">
+								<div class="media-object pull-left">
+									<i class="fa fa-html5"></i>
+								</div>
+								<h3 class="media-heading">HTML, CSS, JS & Python</h3>
+							</div>
+							<div class="media-body">
+								<p>HTML is the backbone of web content. It structures the content on a webpage using tags, defining elements like headings, paragraphs, images, links, and more.
+									<br>
+									CSS is used to style and visually enhance the HTML structure. It defines the layout, colors, fonts, and other stylistic aspects of the webpage.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end about -->
+
+    	<!-- start team -->
+    	<section id="team">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Team </span>Members</h2>
+    				</div>
+    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 1">
+    							<div class="team-des">
+    								<h4>Arshia Sadr</h4>
+    								<span>Owner & FullStack Developer</span>
+    								<p>Owner And Developer Of HMCNetwork!</p>
+    							</div>
+    					</div>
+    				</div>
+					</a>
+    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 2">
+    							<div class="team-des">
+    								<h4>Elyad Gholizadeh</h4>
+    								<span>Co-Owner & Designer</span>
+    								<p>Editor And Designer Of HMCNetwork!</p>
+    							</div>
+    					</div>
+    				</div>
+					</a>
+    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
+    					<div class="team-wrapper">
+    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 3">
+    							<div class="team-des">
+    								<h4>Amir Masoodi</h4>
+    								<span>Front-END Developer</span>
+    								<p>Website Front-END Developer Of HMCNetwork!</p>
+    							</div>
+    					</div>
+    				</div>
+					</a>
+    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
+    					<div class="team-wrapper">
+    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 4">
+    							<div class="team-des">
+    								<h4>Yasin Seyfi</h4>
+    								<span>Front-END Developer</span>
+    								<p>Website Front-END Developer Of HMCNetwork!</p>
+    							</div>
+    					</div>
+    				</div>
+					</a>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end team -->
+
+    	<!-- start service -->
+    	<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> Plan's</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa-solid fa-star"></i>
+    					<h4>Plan I</h4>
+    					<p>Home Page: <i class="fa-solid fa-check"></i>
+							<br>
+						   Inside Page's: 2
+						   <br>
+						   SEO: <i class="fa-solid fa-x"></i>
+						   <br>
+						   Shoping Web: <i class="fa-solid fa-x"></i>
+						   <br>
+						   Support: 20 Day
+						   <br>
+						   Host: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Domain: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Animated Web: <i class="fa-solid fa-x"></i>
+						   <br>
+						   Database: <i class="fa-solid fa-x"></i>
+						   <br>
+						   Login Page: <i class="fa-solid fa-x"></i>
+						   <br>
+						   <br>
+						   <br>
+						   <a href="#contact"><h4>5M or 15M Iranian Tomans</h4></a>
+						</p>
+    				</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+						<h4>Plan II (Recommended)</h4>
+    					<p>Home Page: <i class="fa-solid fa-check"></i>
+							<br>
+						   Inside Page's: 4
+						   <br>
+						   SEO: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Shoping Web: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Support: 35 Day
+						   <br>
+						   Host: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Domain: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Animated Web: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Database: <i class="fa-solid fa-x"></i>
+						   <br>
+						   Login Page: <i class="fa-solid fa-check"></i>
+						   <br>
+						   <br>
+						   <br>
+						   <a href="#contact"><h4>20M or 35M Iranian Tomans</h4></a>
+						   </p>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+						<h4>Plan III</h4>
+    					<p>Home Page: <i class="fa-solid fa-check"></i>
+							<br>
+						   Inside Page's: 7
+						   <br>
+						   SEO: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Shoping Web: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Support: 60 Day
+						   <br>
+						   Host: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Domain: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Animated Web: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Database: <i class="fa-solid fa-check"></i>
+						   <br>
+						   Login Page: <i class="fa-solid fa-check"></i>
+						   <br>
+						   <br>
+						   <br>
+						   <a href="#contact"><h4>40M or 55M Iranian Tomans</h4></a>
+						   </p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end servie -->
+
+    	<!-- start portfolio -->
+    <!--	<section id="portfolio">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Our</span> Project's</h2>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+    					   <img src="images/HMCnetwork.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Project One</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Dorfie Development</span><br>I'm The Head Developer Of The Dorfie Team</li>
-                                <li><span>Asre Bartar</span><br>I'm The Head Developer Of The AsreBartar Team</li>
-                                <li><span>HMC Bot</span><br>Owner And Developer Of The HMC Discord Bot</li>
-                                <li><span>Atlantic</span><br>I'm Developer Of Atlantic Community</li>
-                                <li><span>NovaMTA</span><br>Developer Of Nova Discord Server</li>
-                                <li><span>AXFamily</span><br>Developer Of AXFamily Discord Server</li>
-                            </ul>
+    				</div>
+    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/dorfie.tech.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Two</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
                         </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>CS50 Harvard</span><br>Website Designer - Computer Science</li>
-                                <li><span>Master</span><br>I'm Master In Web Design</li>
-                            </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/asrebartar.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Three</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section>
-
-    <!--Services-->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Shop</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-sharp fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Every Website's For Your Job Like: Shop, GYM And What You Want</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>All of UI And UX Design's For Your Job , Website , App To make it Better</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-robot"></i>
-                    <h2>Bot Development</h2>
-                    <p>Every Bot's For Telegram/Discord Like Music, Moderation And More...</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-discord"></i>
-                    <h2>Discord Config</h2>
-                    <p>Config Your Discord Better Then Every Tech Team Setup Anti Raid...</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>App Development</h2>
-                    <p>Make And Develop Application For Your Shop, Web, Bussiness</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-gamepad"></i>
-                    <h2>Game Gem's</h2>
-                    <p>But All Of Game Gem's For Your Game Acount (Best Price)</p>
-                    <a href="#contact" class="btn3">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section>
-
-    <!--Portfolio-->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Partner's</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Partners/HMCnetwork.jpn" alt="HMCNetwork">
-                    <div class="layer">
-                        
-                        <h3><i class="fa-solid fa-thumbtack"></i> HMC Network</h3>
-                        <p>My Discord Server</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="Partners/dorfie.tech.jpn" alt="DorfieTech">
-                    <div class="layer">
-                        
-                        <h3><i class="fa-solid fa-thumbtack"></i> Dorfie.Tech</h3>
-                        <p>My Team For Develop/Hacking And Design</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/atlantic.jpg" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Four</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="Partners/atlantic.jpn" alt="Atlantic">
-                    <div class="layer">
-                        
-                        <h3>Atlantic</h3>
-                        <p>I'm The Head Developer In There Team</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/axfamily.jpg" class="img-responsive" alt="portfolio img 3">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Five</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="Partners/asrebartar.jpn" alt="AsreBartar">
-                    <div class="layer">
-                        <h3>AsreBartar</h3>
-                        <p>I'm The Head Developer In There Team</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/" class="img-responsive" alt="portfolio img 4">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Six</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="Partners/nova.jpn" alt="Nova">
-                    <div class="layer">
-                        
-                        <h3>NovaMTA</h3>
-                        <p>Best Iran MTA Game Server / I config There Discord And Website</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img 1">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Seven</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="Partners/axfamily.jpn" alt="AXfamily">
-                    <div class="layer">
-                        <h3>AXFamily</h3>
-                        <p>Developer Of There Family Discord Server</p>
-                        <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
+                        <div class="portfolio-thumb">
+                           <img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img 2">
+                                <div class="portfolio-overlay">
+                                    <h4>Project Eight</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
+                                </div>
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    	</section>
+	-->
+    	<!-- end portfolio -->
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>HMC Team</span></h2>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="#contact"> <!-- method="post"> -->
+    						<label>NAME *</label>
+    						<input name="fullname" required type="text" class="form-control" id="fullname">
+   						  	
+                            <label>EMAIL *</label>
+    						<input name="email" required type="email" class="form-control" id="email">
+   						  	
+                            <label>MESSAGE</label>
+    						<textarea name="message" required rows="4" class="form-control" id="message"></textarea>
+    						
+                            <input type="submit" class="form-control">
+    					</form>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">OUR ADDRESS</p>
+    						<span>HMC Team Address's</span>
+    						<p><i class="fa fa-phone"></i> +98 902 793 8889</p>
+    						<p><i class="fa fa-envelope-o"></i> 8arshia5@gmail.com</p>
+    						<p><i class="fa fa-map-marker"></i> Iran Urmia</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>WE ARE SOCIAL</h4></li>
+							<li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+                            <li><a href="https://discord.gg/fq2PJG8BeP"><i class="fa-brands fa-discord"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                        HMC Team &copy; Copyright 2022. Designed By HMCNetwork</p>
                     </div>
                 </div>
             </div>
-            <a href="partner.html" class="btn">See More</a>
-        </div>
-    </div>
+        </footer>
+        <!-- end copyright -->
 
-<section>
-
-    <!--Contact-->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> 8arshia5@gmail.com</p>
-                <p><i class="fa-brands fa-discord"></i> Discord ID HMC#0771</p>
-                <div class="social-icons">
-                    <a href="https://discord.gg/PcH4p5K7zG"><i class="fa-brands fa-discord"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://t.me/Dorfieir"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://github.com/HMCisHere"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.coffeebede.com/hmcishere"><i class="fa-solid fa-circle-dollar-to-slot"></i></a>
-                </div>
-                <a href="https://discord.gg/PcH4p5K7zG" class="btn btn2">join Discord</a>
-            </div>
-            <div class="contact-left">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Send</button>
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div id="footer" class="copyright">
-        <p><i class="fa-solid fa-heart-circle-exclamation"></i> Copyright ArshiaSadr. Made By HMC#0771 In 2022</p>
-    </div>
-</div>   
-
-</section>
-
-</body>
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwdj9uEEyxXhQgfLN718k_r7U17ElSinaCyxfifD8irUgQC9m9mevljZTWtf1ZtlOaeA/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent Successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+	</body>
 </html>
