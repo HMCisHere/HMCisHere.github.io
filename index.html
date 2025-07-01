@@ -1,455 +1,1666 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>ArshiaHMC | Home</title>
-		<meta name="keywords" content="">
-		<meta name="description" content="">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<link rel="stylesheet" href="css/animate.min.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/templatemo-style.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.singlePageNav.min.js"></script>
-		<script src="js/typed.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/custom.js"></script>
-		<script src="https://kit.fontawesome.com/0aca80d020.js" crossorigin="anonymous"></script>
-		<link rel="icon" type="image/x-icon" href="/images/developer.ico">
-	</head>
-	<body id="top">
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرشیا صدر | توسعه‌دهنده فول‌استک | پورتفولیو</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="عرشیا صدر - توسعه‌دهنده فول‌استک حرفه‌ای با تخصص در React، Node.js، Python و طراحی UI/UX مدرن">
+    <meta name="keywords" content="عرشیا صدر, برنامه نویس, توسعه دهنده, React, Node.js, Python, فول استک, طراحی وب">
+    <meta name="author" content="عرشیا صدر">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="عرشیا صدر | توسعه‌دهنده فول‌استک">
+    <meta property="og:description" content="پورتفولیو حرفه‌ای عرشیا صدر - متخصص توسعه وب و اپلیکیشن">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="عرشیا صدر | توسعه‌دهنده فول‌استک">
+    <meta name="twitter:description" content="پورتفولیو حرفه‌ای عرشیا صدر">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "عرشیا صدر",
+        "jobTitle": "توسعه‌دهنده فول‌استک",
+        "description": "توسعه‌دهنده حرفه‌ای وب و اپلیکیشن",
+        "url": "https://arshiahmc.ir"
+    }
+    </script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #00D9FF;
+            --secondary: #7C3AED;
+            --accent: #F59E0B;
+            --bg-dark: #0F0F23;
+            --bg-darker: #0A0A1A;
+            --bg-card: #1A1A2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B4B4B8;
+            --text-accent: #00D9FF;
+            --gradient: linear-gradient(135deg, #00D9FF 0%, #7C3AED 100%);
+            --gradient-2: linear-gradient(135deg, #7C3AED 0%, #F59E0B 100%);
+            --shadow: 0 10px 40px rgba(0, 217, 255, 0.1);
+            --shadow-hover: 0 20px 60px rgba(0, 217, 255, 0.2);
+        }
 
-		<!-- start preloader -->
-		<div class="preloader">
-			<div class="sk-spinner sk-spinner-wave">
-     	 		<div class="sk-rect1"></div>
-       			<div class="sk-rect2"></div>
-       			<div class="sk-rect3"></div>
-      	 		<div class="sk-rect4"></div>
-      			<div class="sk-rect5"></div>
-     		</div>
-    	</div>
-    	<!-- end preloader -->
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        <!-- start header -->
-        <header id="head">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <p><i class="fa fa-phone"></i><span> Phone</span>+98 902 793 8889</p>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Matrix Rain Effect */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 15, 35, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 2rem 2rem;
+            background: radial-gradient(ellipse at center, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .hero-content .description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: var(--bg-dark);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            transform: translateY(-2px);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .code-editor {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            font-family: 'JetBrains Mono', monospace;
+            width: 100%;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .code-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .code-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .code-dot:nth-child(1) { background: #ff5f56; }
+        .code-dot:nth-child(2) { background: #ffbd2e; }
+        .code-dot:nth-child(3) { background: #27ca3f; }
+
+        .code-content {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .code-keyword { color: #ff6b6b; }
+        .code-string { color: #4ecdc4; }
+        .code-comment { color: #666; font-style: italic; }
+        .code-function { color: #ffe66d; }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: var(--gradient);
+            border-radius: 10px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            right: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            right: 20%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            top: 80%;
+            right: 5%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 2rem;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .profile-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: var(--gradient);
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img i {
+            font-size: 4rem;
+            color: var(--bg-dark);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        .skill-category h3 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 4px;
+            animation: loadSkill 2s ease-in-out;
+        }
+
+        @keyframes loadSkill {
+            from { width: 0; }
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .project-image {
+            height: 200px;
+            background: var(--gradient-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .project-card:hover .project-image::before {
+            transform: translateX(100%);
+        }
+
+        .project-image i {
+            font-size: 3rem;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: rgba(0, 217, 255, 0.1);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-link:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: 50%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-right: 3rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 3rem;
+        }
+
+        .timeline-content {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+            position: relative;
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            right: -10px;
+            border-color: transparent transparent transparent var(--bg-card);
+            border-width: 10px 0 10px 10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            left: -10px;
+            border-color: transparent var(--bg-card) transparent transparent;
+            border-width: 10px 10px 10px 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: var(--primary);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 0 4px var(--bg-dark), 0 0 0 8px var(--primary);
+        }
+
+        .timeline-date {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-company {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(0, 217, 255, 0.05);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(0, 217, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(0, 217, 255, 0.05);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 217, 255, 0.1);
+            border: 1px solid rgba(0, 217, 255, 0.3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-darker);
+            padding: 3rem 2rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 217, 255, 0.1);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-darker);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0;
+                padding-left: 60px;
+                padding-right: 0;
+            }
+
+            .timeline-item .timeline-content::before {
+                left: -10px;
+                border-color: transparent var(--bg-card) transparent transparent;
+                border-width: 10px 10px 10px 0;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                padding: 4rem 1rem;
+            }
+
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .code-editor {
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .typing-animation {
+            border-right: 2px solid var(--primary);
+            animation: typing 3s steps(40) infinite, blink 1s infinite;
+        }
+
+        @keyframes typing {
+            0%, 100% { width: 0; }
+            50% { width: 100%; }
+        }
+
+        @keyframes blink {
+            0%, 50% { border-color: var(--primary); }
+            51%, 100% { border-color: transparent; }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(0, 217, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Particle Effect */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: particleFloat 8s infinite linear;
+            opacity: 0.6;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.6;
+            }
+            90% {
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(-10vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Particles Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Matrix Background -->
+    <canvas class="matrix-bg" id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">&lt;ArshiaSadr /&gt;</div>
+            <ul class="nav-links">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
+                <li><a href="#experience">تجربیات</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">عرشیا صدر</h1>
+                <p class="subtitle fade-in">توسعه‌دهنده فول‌استک</p>
+                <p class="description fade-in">
+                    متخصص توسعه وب و اپلیکیشن با بیش از ۵ سال تجربه در زمینه برنامه‌نویسی. 
+                    علاقه‌مند به تکنولوژی‌های مدرن و خلق تجربیات کاربری منحصر به فرد.
+                </p>
+                <div class="cta-buttons fade-in">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        مشاهده پروژه‌ها
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        تماس با من
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-editor fade-in">
+                    <div class="code-header">
+                        <div class="code-dot"></div>
+                        <div class="code-dot"></div>
+                        <div class="code-dot"></div>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12">
-                        <p><i class="fa fa-envelope-o"></i><span> Email</span><a href="mailto:8arshia5@gmail.com">8arshia5@gmail.com</a></p>
+                    <div class="code-content">
+                        <div><span class="code-keyword">const</span> <span class="code-function">developer</span> = {</div>
+                        <div>&nbsp;&nbsp;name: <span class="code-string">"عرشیا صدر"</span>,</div>
+                        <div>&nbsp;&nbsp;skills: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>],</div>
+                        <div>&nbsp;&nbsp;passion: <span class="code-string">"تکنولوژی"</span>,</div>
+                        <div>&nbsp;&nbsp;<span class="code-function">code</span>: () => {</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-comment">// خلق راه‌حل‌های نوآورانه</span></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"کیفیت بالا"</span>;</div>
+                        <div>&nbsp;&nbsp;}</div>
+                        <div>};</div>
                     </div>
-                    <div class="col-md-5 col-sm-4 col-xs-12">
-                        <ul class="social-icon">
-                            <li><span>Meet us on</span></li>
-                            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://discord.gg/fq2PJG8BeP"><i class="fa-brands fa-discord"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                        </ul>
+                </div>
+                <div class="floating-elements">
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">درباره من</h2>
+            <p class="section-subtitle">برنامه‌نویس با اشتیاق، طراح با تجربه</p>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>عرشیا صدر</h3>
+                        <p>توسعه‌دهنده فول‌استک</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        من عرشیا صدر هستم، توسعه‌دهنده فول‌استک با بیش از ۵ سال تجربه در زمینه طراحی و توسعه وب‌سایت‌ها و اپلیکیشن‌های مدرن. 
+                        تخصص من در حوزه‌های مختلف برنامه‌نویسی از جمله React، Node.js، Python و طراحی UI/UX است.
+                    </p>
+                    <p>
+                        هدف من همیشه ایجاد راه‌حل‌های خلاقانه و کاربردی بوده که نه تنها از نظر فنی قدرتمند باشند، بلکه تجربه کاربری عالی نیز ارائه دهند. 
+                        علاقه‌مند به یادگیری تکنولوژی‌های جدید و همیشه در تلاش برای بهبود مهارت‌هایم هستم.
+                    </p>
+                    <p>
+                        در طول مسیر حرفه‌ای خود، در پروژه‌های متنوعی از استارتاپ‌های کوچک تا شرکت‌های بزرگ مشارکت داشته‌ام و تجربیات ارزشمندی کسب کرده‌ام.
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> فرانت‌اند</h3>
+                    <div class="skill-item">
+                        <span>React & Next.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript & TypeScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Vue.js & Nuxt.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS & Sass</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> بک‌اند</h3>
+                    <div class="skill-item">
+                        <span>Node.js & Express</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python & Django</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>PHP & Laravel</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MongoDB & MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> موبایل و ابزارها</h3>
+                    <div class="skill-item">
+                        <span>React Native</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Flutter & Dart</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Git & Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>AWS & Azure</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- end header -->
+        </div>
+    </section>
 
-    	<!-- start navigation -->
-		<nav class="navbar navbar-default templatemo-nav" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon icon-bar"></span>
-						<span class="icon icon-bar"></span>
-						<span class="icon icon-bar"></span>
-					</button>
-					<a href="#head" class="navbar-brand">HMC Network</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#top">HOME</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#team">TEAM</a></li>
-						<li><a href="#service">SERVICE</a></li>
-					  <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
-						<li><a href="#contact">CONTACT</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<!-- end navigation -->
-
-    	<!-- start home -->
-    	<section id="home">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-offset-2 col-md-8">
-    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">We make website's in <span>HMC Team</span></h1>
-    					<div class="element">
-                            <div class="sub-element">Hello, This is a ArshiaHMC's Website.</div>
-                            <div class="sub-element">Our Team Can Make Website for You.</div>
-                            <div class="sub-element">So If You Want Let's Make You Website!</div>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">پروژه‌های من</h2>
+            <p class="section-subtitle">نمونه‌هایی از کارهای انجام شده</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">پلتفرم فروشگاهی</h3>
+                        <p class="project-description">
+                            یک پلتفرم کامل فروشگاهی با قابلیت‌های پیشرفته شامل مدیریت محصولات، پردازش پرداخت، 
+                            پنل ادمین و تجربه کاربری بهینه برای موبایل و دسکتاپ.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
                         </div>
-    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<!-- end home -->
-
-    	<!-- start about -->
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">WE ARE <span>HMC Team</span></h2>
-    				</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
-						<div class="media">
-							<div class="media-heading-wrapper">
-								<div class="media-object pull-left">
-									<i class="fa fa-mobile"></i>
-								</div>
-								<h3 class="media-heading">FULLY RESPONSIVE</h3>
-							</div>
-							<div class="media-body">
-								<p>
-									Creating a responsive website involves designing and developing it to provide an optimal viewing and interaction experience across a variety of devices and screen sizes. This is achieved through techniques such as fluid grid layouts, flexible images, and media queries in CSS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
-						<div class="media">
-							<div class="media-heading-wrapper">
-								<div class="media-object pull-left">
-									<i class="fa fa-comment-o"></i>
-								</div>
-								<h3 class="media-heading">FREE SUPPORT</h3>
-							</div>
-							<div class="media-body">
-								<p>"Free support" refers to assistance or help that is provided without any charge. In the context of a product or service, offering free support means that users can receive assistance, guidance, or troubleshooting without incurring additional costs.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-						<div class="media">
-							<div class="media-heading-wrapper">
-								<div class="media-object pull-left">
-									<i class="fa fa-html5"></i>
-								</div>
-								<h3 class="media-heading">HTML, CSS, JS & Python</h3>
-							</div>
-							<div class="media-body">
-								<p>HTML is the backbone of web content. It structures the content on a webpage using tags, defining elements like headings, paragraphs, images, links, and more.
-									<br>
-									CSS is used to style and visually enhance the HTML structure. It defines the layout, colors, fonts, and other stylistic aspects of the webpage.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end about -->
-
-    	<!-- start team -->
-    	<section id="team">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Team </span>Members</h2>
-    				</div>
-    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
-    					<div class="team-wrapper">
-    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 1">
-    							<div class="team-des">
-    								<h4>Arshia Sadr</h4>
-    								<span>Owner & FullStack Developer</span>
-    								<p>Owner And Developer Of HMCNetwork!</p>
-    							</div>
-    					</div>
-    				</div>
-					</a>
-    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
-    					<div class="team-wrapper">
-    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 2">
-    							<div class="team-des">
-    								<h4>Elyad Gholizadeh</h4>
-    								<span>Co-Owner & Designer</span>
-    								<p>Editor And Designer Of HMCNetwork!</p>
-    							</div>
-    					</div>
-    				</div>
-					</a>
-    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
-    					<div class="team-wrapper">
-    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 3">
-    							<div class="team-des">
-    								<h4>Amir Masoodi</h4>
-    								<span>Front-END Developer</span>
-    								<p>Website Front-END Developer Of HMCNetwork!</p>
-    							</div>
-    					</div>
-    				</div>
-					</a>
-    				<a href="https://discord.gg/2ueTfmaZAA"><div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
-    					<div class="team-wrapper">
-    						<img src="images/member-1.jpg" class="img-responsive" alt="team img 4">
-    							<div class="team-des">
-    								<h4>Yasin Seyfi</h4>
-    								<span>Front-END Developer</span>
-    								<p>Website Front-END Developer Of HMCNetwork!</p>
-    							</div>
-    					</div>
-    				</div>
-					</a>
-    			</div>
-    		</div>
-    	</section>
-    	<!-- end team -->
-
-    	<!-- start service -->
-    	<section id="service">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> Plan's</h2>
-    				</div>
-    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-    					<i class="fa-solid fa-star"></i>
-    					<h4>Plan I</h4>
-    					<p>Home Page: <i class="fa-solid fa-check"></i>
-							<br>
-						   Inside Page's: 2
-						   <br>
-						   SEO: <i class="fa-solid fa-x"></i>
-						   <br>
-						   Shoping Web: <i class="fa-solid fa-x"></i>
-						   <br>
-						   Support: 20 Day
-						   <br>
-						   Host: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Domain: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Animated Web: <i class="fa-solid fa-x"></i>
-						   <br>
-						   Database: <i class="fa-solid fa-x"></i>
-						   <br>
-						   Login Page: <i class="fa-solid fa-x"></i>
-						   <br>
-						   <br>
-						   <br>
-						   <a href="#contact"><h4>5M or 15M Iranian Tomans</h4></a>
-						</p>
-    				</div>
-    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
-    					<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-						<h4>Plan II (Recommended)</h4>
-    					<p>Home Page: <i class="fa-solid fa-check"></i>
-							<br>
-						   Inside Page's: 4
-						   <br>
-						   SEO: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Shoping Web: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Support: 35 Day
-						   <br>
-						   Host: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Domain: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Animated Web: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Database: <i class="fa-solid fa-x"></i>
-						   <br>
-						   Login Page: <i class="fa-solid fa-check"></i>
-						   <br>
-						   <br>
-						   <br>
-						   <a href="#contact"><h4>20M or 35M Iranian Tomans</h4></a>
-						   </p>
-    				</div>
-    				<div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-    					<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-						<h4>Plan III</h4>
-    					<p>Home Page: <i class="fa-solid fa-check"></i>
-							<br>
-						   Inside Page's: 7
-						   <br>
-						   SEO: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Shoping Web: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Support: 60 Day
-						   <br>
-						   Host: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Domain: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Animated Web: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Database: <i class="fa-solid fa-check"></i>
-						   <br>
-						   Login Page: <i class="fa-solid fa-check"></i>
-						   <br>
-						   <br>
-						   <br>
-						   <a href="#contact"><h4>40M or 55M Iranian Tomans</h4></a>
-						   </p>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<!-- end servie -->
-
-    	<!-- start portfolio -->
-    <!--	<section id="portfolio">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>Our</span> Project's</h2>
-    				</div>
-    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-    					   <img src="images/HMCnetwork.jpg" class="img-responsive" alt="portfolio img 1">
-                                <div class="portfolio-overlay">
-                                    <h4>Project One</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-    				</div>
-    				<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/dorfie.tech.jpg" class="img-responsive" alt="portfolio img 2">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Two</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/asrebartar.jpg" class="img-responsive" alt="portfolio img 3">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Three</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/atlantic.jpg" class="img-responsive" alt="portfolio img 4">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Four</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/axfamily.jpg" class="img-responsive" alt="portfolio img 3">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Five</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/" class="img-responsive" alt="portfolio img 4">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Six</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img 1">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Seven</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-                        <div class="portfolio-thumb">
-                           <img src="images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img 2">
-                                <div class="portfolio-overlay">
-                                    <h4>Project Eight</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                                </div>
-                        </div>
-                    </div>
-    			</div>
-    		</div>
-    	</section>
-	-->
-    	<!-- end portfolio -->
+                </div>
 
-    	<!-- start contact -->
-    	<section id="contact">
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-12">
-    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>HMC Team</span></h2>
-    				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-    					<form action="#contact"> <!-- method="post"> -->
-    						<label>NAME *</label>
-    						<input name="fullname" required type="text" class="form-control" id="fullname">
-   						  	
-                            <label>EMAIL *</label>
-    						<input name="email" required type="email" class="form-control" id="email">
-   						  	
-                            <label>MESSAGE</label>
-    						<textarea name="message" required rows="4" class="form-control" id="message"></textarea>
-    						
-                            <input type="submit" class="form-control">
-    					</form>
-    				</div>
-    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-    					<address>
-    						<p class="address-title">OUR ADDRESS</p>
-    						<span>HMC Team Address's</span>
-    						<p><i class="fa fa-phone"></i> +98 902 793 8889</p>
-    						<p><i class="fa fa-envelope-o"></i> 8arshia5@gmail.com</p>
-    						<p><i class="fa fa-map-marker"></i> Iran Urmia</p>
-    					</address>
-    					<ul class="social-icon">
-    						<li><h4>WE ARE SOCIAL</h4></li>
-							<li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
-                            <li><a href="https://discord.gg/fq2PJG8BeP"><i class="fa-brands fa-discord"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-    					</ul>
-    				</div>
-    			</div>
-    		</div>
-    	</section>
-    	<!-- end contact -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">داشبورد تحلیلی</h3>
+                        <p class="project-description">
+                            داشبورد تحلیلی پیشرفته برای نمایش آمار و گزارش‌های تجاری با نمودارهای تعاملی، 
+                            فیلترهای پیشرفته و امکان صادرات داده‌ها.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- start copyright -->
-        <footer id="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-                        HMC Team &copy; Copyright 2022. Designed By HMCNetwork</p>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">اپلیکیشن موبایل</h3>
+                        <p class="project-description">
+                            اپلیکیشن موبایل کراس پلتفرم برای مدیریت وظایف روزانه با قابلیت‌های هوشمند، 
+                            یادآوری‌ها و همگام‌سازی ابری.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Push Notifications</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">سیستم هوش مصنوعی</h3>
+                        <p class="project-description">
+                            سیستم هوش مصنوعی برای تحلیل متن و استخراج اطلاعات مهم با استفاده از 
+                            تکنیک‌های پردازش زبان طبیعی و یادگیری ماشین.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">بازی وب تعاملی</h3>
+                        <p class="project-description">
+                            بازی وب تعاملی با گرافیک‌های سه‌بعدی، حالت چندنفره و امکان رقابت آنلاین 
+                            با استفاده از تکنولوژی‌های مدرن وب.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">WebGL</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">سرویس ابری</h3>
+                        <p class="project-description">
+                            پلتفرم ابری برای مدیریت و اشتراک‌گذاری فایل‌ها با قابلیت‌های پیشرفته امنیتی، 
+                            همکاری تیمی و دسترسی از همه جا.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">AWS S3</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Auth0</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-eye"></i> نمایش
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> کد
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- end copyright -->
+        </div>
+    </section>
 
-	</body>
+    <!-- Experience Section 
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">تجربیات کاری</h2>
+            <p class="section-subtitle">مسیر حرفه‌ای من</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">۱۴۰۲ - اکنون</div>
+                        <h3 class="timeline-title">توسعه‌دهنده ارشد فول‌استک</h3>
+                        <div class="timeline-company">شرکت تکنولوژی پیشرو</div>
+                        <p>مسئولیت طراحی و توسعه سیستم‌های پیچیده وب، رهبری تیم توسعه و پیاده‌سازی معماری‌های مقیاس‌پذیر با تکنولوژی‌های مدرن.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">۱۴۰۰ - ۱۴۰۲</div>
+                        <h3 class="timeline-title">توسعه‌دهنده فرانت‌اند</h3>
+                        <div class="timeline-company">استودیو طراحی دیجیتال</div>
+                        <p>توسعه رابط‌های کاربری پیشرفته و ریسپانسیو، همکاری نزدیک با تیم طراحی UX/UI و بهینه‌سازی عملکرد وب‌سایت‌ها.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">۱۳۹۸ - ۱۴۰۰</div>
+                        <h3 class="timeline-title">برنامه‌نویس جونیور</h3>
+                        <div class="timeline-company">شرکت نرم‌افزاری آینده</div>
+                        <p>شروع مسیر حرفه‌ای با یادگیری تکنولوژی‌های مختلف، مشارکت در پروژه‌های تیمی و کسب تجربه در محیط‌های توسعه مختلف.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">۱۳۹۶ - ۱۳۹۸</div>
+                        <h3 class="timeline-title">فریلنسر</h3>
+                        <div class="timeline-company">پروژه‌های شخصی</div>
+                        <p>کار بر روی پروژه‌های مختلف فریلنسری، توسعه وب‌سایت‌های شخصی و تجاری، یادگیری خودکار تکنولوژی‌های جدید.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">تماس با من</h2>
+            <p class="section-subtitle">آماده همکاری در پروژه‌های جدید</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>اطلاعات تماس</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>ایمیل</h4>
+                            <p>arshia.sadr@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>تلفن</h4>
+                            <p>+98 912 345 6789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>آدرس</h4>
+                            <p>تهران، ایران</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <h4>لینکدین</h4>
+                            <p>linkedin.com/in/arshiasadr</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>پیام بفرستید</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">نام و نام خانوادگی</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">موضوع</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">پیام</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            ارسال پیام
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">&lt;ArshiaSadr /&gt;</div>
+            <p class="footer-text">
+                توسعه‌دهنده فول‌استک با اشتیاق برای خلق تجربیات دیجیتال منحصر به فرد
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#home">خانه</a>
+                <a href="#about">درباره من</a>
+                <a href="#projects">پروژه‌ها</a>
+                <a href="#experience">تجربیات</a>
+                <a href="#contact">تماس</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; ۱۴۰۳ عرشیا صدر. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Matrix Background Effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+        const matrixArray = matrix.split("");
+
+        const fontSize = 10;
+        const columns = canvas.width / fontSize;
+
+        const drops = [];
+        for(let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(15, 15, 35, 0.04)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00D9FF';
+            ctx.font = fontSize + 'px monospace';
+
+            for(let i = 0; i < drops.length; i++) {
+                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 35);
+
+        // Resize handler for canvas
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const newColumns = canvas.width / fontSize;
+            drops.length = newColumns;
+            for(let x = drops.length; x < newColumns; x++) {
+                drops[x] = 1;
+            }
+        });
+
+        // Interactive Functions
+        function executeCommand() {
+            showTerminalResponse("PROTOCOL EXECUTED SUCCESSFULLY", "#00FF88");
+        }
+
+        function scanNetwork() {
+            showTerminalResponse("SCANNING... 127 NODES DETECTED", "#FF00AA");
+        }
+
+        function accessData() {
+            showTerminalResponse("DATA ACCESS GRANTED - LEVEL 7 CLEARANCE", "#FFD700");
+        }
+
+        function showTerminalResponse(text, color = "#00D9FF") {
+            const terminalContent = document.querySelector('.terminal-content');
+            const newLine = document.createElement('div');
+            newLine.className = 'command-line';
+            newLine.innerHTML = `
+                <span class="prompt">system@response:~$</span>
+                <span class="command" style="color: ${color}">${text}</span>
+            `;
+            terminalContent.appendChild(newLine);
+            
+            // Keep only last 10 lines
+            const lines = terminalContent.querySelectorAll('.command-line');
+            if(lines.length > 10) {
+                terminalContent.removeChild(lines[0]);
+            }
+        }
+
+        // Add random glitch effects
+        setInterval(() => {
+            const elements = document.querySelectorAll('.glitch-text');
+            elements.forEach(el => {
+                if(Math.random() > 0.95) {
+                    el.style.animation = 'none';
+                    setTimeout(() => {
+                        el.style.animation = 'glitch 2s infinite';
+                    }, 100);
+                }
+            });
+        }, 2000);
+
+        // Typing sound effect simulation
+        document.addEventListener('keydown', () => {
+            // You can add actual sound effects here
+            console.log('Key pressed - add cyberpunk typing sound');
+        });
+</script>
+</body>
 </html>
